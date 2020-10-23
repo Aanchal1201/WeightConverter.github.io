@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weight Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Weight Converter</h2>
+        <p>(Type a value in any of the fields to convert between weight measurements)</p>
+        <div class="weightcontainer">
+            <div class="measure">
+                <label for="Pounds">Pounds</label>
+                <input type="number" placeholder="Pounds" name="Pounds" id="pound" onchange="Pounds(this.value)" oninput="Pounds(this.value)">
+            </div>
+        <div class="measure">
+            <label for="MetricTones">Metric Tones</label>
+            <input type="number" placeholder="MetricTones" name="MetricTones" id="MetricTone" oninput="MetricTones(this.value)" onchange="MetricTones(this.value)">
+        </div>
+        <div class="measure">
+            <label for="Kilograms">Kilograms</label>
+            <input type="number" placeholder="Kilograms" name="Kilograms" id="kilogram" onchange="Kilograms(this.value)" oninput="Kilograms(this.value)">
+        </div>
+        <div class="measure">
+            <label for="Ounces">Ounces</label>
+            <input type="number" placeholder="Ounces" name="Ounces" id="ounce" onchange="Ounces(this.value)" oninput="Ounces(this.value)">
+        </div>
+        <div class="measure">
+            <label for="Grams">Grams</label>
+            <input type="number" placeholder="Grams" name="Grams" id="Gram" oninput="Grams(this.value)" onchange="Grams(this.value)">
+        </div>
+        <div class="measure">         
+            <label for="Miligrams">Miligrams</label>
+            <input type="number" placeholder="Miligrams" name="Grams" id="Miligram" oninput="Miligrams(this.value)" onchange="Miligrams(this.value)">
+        </div>
+        <div class="measure">
+            <label for="Micrograms">Micrograms</label>
+            <input type="number" placeholder="Micrograms" name="Micrograms" id="Microgram" oninput="Micrograms(this.value)" onchange="Micrograms(this.value)">
+        </div>
+        <div class="measure">
+            <label for="Stones">Stones</label>
+            <input type="number" placeholder="Stones" name="Stones" id="stone" oninput="Stones(this.value)" onchange="Stones(this.value)">
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

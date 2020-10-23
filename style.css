@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    border: 2px solid rgb(61, 61, 128);
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.container h2
+{
+    background-color: rgb(61, 61, 128);
+    color: white;
+    border: none;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 1.8rem;
+}
+
+.container p
+{
+    margin: 2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.weightcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.measure
+{
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.measure label{
+    font-size: 1.3rem;
+    display: block;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.measure input[type="number"]{
+    font-size:1.1rem ;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.measure input[type="number"]:focus{
+    border:1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media only screen and (max-width:380px)
+{
+    .container{
+        width: 90%;
+    }
+    .measure
+    {
+        width: 80%;
+    }
+    .measure input[type="number"]
+    {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:800px) and (min-width:380px){
+    .container{
+        width: 90%;
+    }
+    .measure
+    {
+        width: 80%;
+    }
+    .measure input[type="number"]
+    {
+        width: 280px;
+    }
+}
+@media only screen and (max-width:1000px) and (min-width:800px){
+    .container{
+        width: 80%;
+    }
+    .measure
+    {
+        width: 70%;
+    }
+    .measure input[type="number"]
+    {
+        width: 380px;
+    }
+}
